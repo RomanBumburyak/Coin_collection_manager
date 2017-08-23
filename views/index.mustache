@@ -1,0 +1,33 @@
+<h1>Here are my Coins!</h1>
+
+<div class="main_content">
+
+
+  <form class="coins" action="/addCoin" method="post"> <!--the /addCoin is referenced in the POST request in the index.js of my routes folder -->
+    <input type="text" name="name" value="" placeholder="coin name">
+    <input type="number" name="type" placeholder="type">
+    <input type="number" name="min" placeholder="min">
+    <input type="number" name="iron" placeholder="iron">
+    <input type="number" name="copper" placeholder="copper">
+    <input type="number" name="zinc" placeholder="zinc">
+
+
+
+    <input type="submit">
+  </form>
+  {{#coinCollect}}
+<ul>
+    <li>{{name}}</li>
+    <li>{{type}}</li>
+    <li>{{min}}</li>
+    <li>{{iron}}</li>
+    <li>{{copper}}</li>
+    <li>{{zinc}}</li>
+    
+
+
+</ul>
+  {{/coinCollect}}
+
+
+</div>
