@@ -44,11 +44,6 @@ router.post("/addCoin", function(req,res){
     }],
   };
 
-
-
-
-
-
   // var newCoin = new Coin;
   Coin.create(newCoin)
   .then(function(data) {
